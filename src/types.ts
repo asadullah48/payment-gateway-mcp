@@ -1,4 +1,4 @@
-export type GatewayName = 'jazzcash' | 'easypaisa' | 'nayapay' | 'meezan' | 'alfalah';
+export type GatewayName = 'jazzcash' | 'easypaisa' | 'nayapay' | 'meezan' | 'alfalah' | 'checkout';
 
 export interface PaymentRequest {
   gateway: GatewayName;

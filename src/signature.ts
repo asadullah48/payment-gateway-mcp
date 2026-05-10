@@ -6,10 +6,10 @@ export function generateHMACSignature(
   excludeFields: string[] = ['signature']
 ): string {
   const sortedParams = Object.keys(data)
-    .filter(key => 
-      !excludeFields.includes(key) && 
-      data[key] !== '' && 
-      data[key] !== null && 
+    .filter(key =>
+      !excludeFields.includes(key) &&
+      data[key] !== '' &&
+      data[key] !== null &&
       data[key] !== undefined
     )
     .sort();
@@ -24,6 +24,23 @@ export function generateHMACSignature(
     .createHmac('sha256', integritySalt)
     .update(message)
     .digest('hex');
+}
+
+// EasyPaisa uses HMAC-SHA1 with base64 output
+export function generateHMACSHA1Signature(
+  data: Record<string, any>,
+  hashKey: string
+): string {
+  const sortedParams = Object.keys(data)
+    .filter(key => data[key] !== '' && data[key] !== null && data[key] !== undefined)
+    .sort();
+
+  const message = sortedParams.map(k => String(data[k])).join('&');
+
+  return crypto
+    .createHmac('sha1', hashKey)
+    .update(message)
+    .digest('base64');
 }
 
 export function generateTransactionId(prefix: string = 'TXN'): string {
