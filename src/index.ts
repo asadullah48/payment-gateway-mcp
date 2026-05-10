@@ -8,7 +8,8 @@ import { MeezanGateway } from './gateways/meezan.js';
 import { AlfalahGateway } from './gateways/alfalah.js';
 import { CheckoutGateway } from './gateways/checkout.js';
 import { IPaymentGateway } from './gateways/base-gateway.js';
-import { PaymentRequest } from './types.js';
+import { PaymentRequest, GatewayName } from './types.js';
+import { selectGateway } from './router.js';
 import dotenv from 'dotenv';
 
 dotenv.config();

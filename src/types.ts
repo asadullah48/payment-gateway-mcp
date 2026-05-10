@@ -44,3 +44,23 @@ export interface GatewayConfig {
   maxAmount: number;
   environment: 'sandbox' | 'production';
 }
+
+export interface RoutingContext {
+  amount: number;
+  currency: string;
+  hasPhone: boolean;
+}
+
+export interface RoutingDecision {
+  primary: string;
+  fallbackChain: string[];
+  reasons: string[];
+}
+
+export interface RoutedPaymentResponse extends PaymentResponse {
+  routing: {
+    selectedGateway: string;
+    reasons: string[];
+    triedGateways?: Array<{ gateway: string; error: string }>;
+  };
+}
