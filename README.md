@@ -2,7 +2,6 @@
 
 A unified [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that gives Claude native access to Pakistani and international payment gateways — JazzCash, EasyPaisa, Naya Pay, Meezan Bank, Bank Alfalah, and Checkout.com.
 
-> **Inspired by** [TehreemArbab/JazzCashMCP](https://github.com/TehreemArbab/JazzCashMCP) — the first open-source JazzCash MCP implementation. This project extends that idea into a full multi-gateway solution for the Pakistani payments ecosystem.
 
 ---
 
@@ -242,7 +241,6 @@ Pull requests welcome. To add a new gateway:
 
 ## Credits
 
-- Inspired by [TehreemArbab/JazzCashMCP](https://github.com/TehreemArbab/JazzCashMCP) — the original open-source JazzCash MCP server by Tehreem Arbab
 - Built with the [Model Context Protocol TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 
 ---
