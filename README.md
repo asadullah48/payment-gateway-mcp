@@ -1,5 +1,9 @@
 # payment-gateway-mcp
 
+[![CI](https://github.com/asadullah48/payment-gateway-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/asadullah48/payment-gateway-mcp/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
+
 A unified [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that gives Claude native access to Pakistani and international payment gateways — JazzCash, EasyPaisa, Naya Pay, Meezan Bank, Bank Alfalah, and Checkout.com.
 
 

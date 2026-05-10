@@ -1,13 +1,42 @@
 {
   "name": "payment-gateway-mcp",
   "version": "1.0.0",
-  "description": "Unified Payment Gateway MCP Server — JazzCash, EasyPaisa, Naya Pay, Meezan, Alfalah, Checkout.com",
+  "description": "Unified MCP server for Pakistani and international payment gateways — JazzCash, EasyPaisa, Naya Pay, Meezan Bank, Bank Alfalah, Checkout.com",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "payment-gateway",
+    "jazzcash",
+    "easypaisa",
+    "nayapay",
+    "meezan",
+    "alfalah",
+    "pakistan",
+    "checkout",
+    "claude",
+    "ai",
+    "typescript"
+  ],
+  "author": "asadullah48",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asadullah48/payment-gateway-mcp.git"
+  },
+  "homepage": "https://github.com/asadullah48/payment-gateway-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/asadullah48/payment-gateway-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",

@@ -1,4 +1,16 @@
-node_modules/ 
-.env 
-dist/ 
-*.log 
+node_modules/
+dist/
+.env
+*.log
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code internal config
+.claude/
+
+# Stray AI export files
+deepseek_json_*.json
